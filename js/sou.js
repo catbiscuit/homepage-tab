@@ -67,6 +67,30 @@ var quick_list_preinstall = {
         img: "./icon/scp.png",
         explain: "控制，收容，保护",
     },
+    '6': {
+        title: "小红书",
+        url: "https://www.xiaohongshu.com/",
+        img: "./icon/xiaohongshu.ico",
+        explain: "小红书 - 你的生活指南",
+    },
+    '7': {
+        title: "智谱清言",
+        url: "https://chatglm.cn/main/alltoolsdetail?lang=zh",
+        img: "./icon/chatglm.png",
+        explain: "中国版对话语言模型，与GLM大模型进行对话。",
+    },
+    '8': {
+        title: "DeepSeek",
+        url: "https://chat.deepseek.com/",
+        img: "./icon/deepseek.png",
+        explain: "DeepSeek - 探索未至之境",
+    },
+    '9': {
+        title: "Gitee",
+        url: "https://gitee.com/",
+        img: "./icon/gitee.ico",
+        explain: "Gitee - 基于 Git 的代码托管和研发协作平台",
+    },
 };
 
 // 主题方案【预设】
@@ -95,7 +119,7 @@ var themes_preinstall = {
 
 //背景图片
 var bg_img_preinstall = {
-    "type" : "3",// 1:使用主题默认的背景图片、2:关闭背景图片、3:使用自定义的背景图片
+    "type" : "2",// 1:使用主题默认的背景图片、2:关闭背景图片、3:使用自定义的背景图片
     "path" : "https://cdn.jsdelivr.net/gh/yeetime/img/20200627173550.png",//背景图片
 };
 
@@ -209,7 +233,7 @@ function themesInit() {
 // 获取默认主题
 function getThemesDefault() {
     var theme_default = Cookies.get('theme_default');
-    return theme_default ? theme_default : "1";
+    return theme_default ? theme_default : "2";
 }
 
 // 修改默认主题
